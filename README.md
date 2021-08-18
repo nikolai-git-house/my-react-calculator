@@ -11,6 +11,9 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### Deploy `firebase deploy`
+Run `npm run build` before deploy <br/>
+Deploys to https://mytest-beb7e.web.app/
 # my-react-calculator description
 Calculator app built with React and no other packages installed. I built with react create app and used functional component across whole code. <br/>
 I used additional css and didn't try to install any external packages for better performance and avoiding unnecessary memory use.
