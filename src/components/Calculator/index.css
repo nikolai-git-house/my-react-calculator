@@ -1,0 +1,111 @@
+:root {
+  --base-one: rgba(50, 30, 0, 0.8);
+  --base-two: rgba(0, 0, 0, 0.5);
+  --accent-one: #ff9f0c;
+  --accent-two: #cc0000;
+}
+
+.calculator {
+  width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+#wrapper .calculator {
+  box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.calculator-display {
+  width: 100%;
+  color: white;
+  background: #1c191c;
+  line-height: 80px;
+  font-size: 6em;
+  flex: 1;
+}
+
+.calculator-display .auto-scaling-text {
+  text-align: right;
+}
+
+.calculator-keypad {
+  height: 400px;
+  display: flex;
+}
+
+.calculator .input-keys {
+  width: 240px;
+}
+
+.calculator .function-keys {
+  display: flex;
+}
+
+.calculator .digit-keys {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+.calculator-key {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #777;
+  text-align: center;
+  line-height: 80px;
+}
+.calculator .key-multiply {
+  line-height: 50px;
+}
+.calculator .digit-keys .key-0 {
+  width: 160px;
+  text-align: left;
+  padding-left: 32px;
+}
+.calculator .digit-keys .key-dot {
+  padding-top: 1em;
+  font-size: 0.75em;
+}
+.calculator .calculator-key {
+  font-size: 3em;
+}
+
+.calculator .key-btn:hover,
+.secondary-btn:hover {
+  opacity: 0.8;
+}
+
+.theme-one .secondary-btn {
+  background-color: var(--base-one);
+  filter: brightness(120%);
+  color: white;
+}
+
+.theme-two .secondary-btn {
+  background-color: var(--base-two);
+  filter: brightness(120%);
+}
+
+.theme-one .key-btn {
+  background-color: var(--base-one);
+  filter: brightness(140%);
+  color: white;
+}
+.theme-two .key-btn {
+  background-color: var(--base-two);
+  filter: brightness(140%);
+  color: black;
+}
+
+.theme-one .accent-btn {
+  color: white;
+  background-color: var(--accent-one);
+}
+.theme-two .accent-btn {
+  color: white;
+  background-color: var(--accent-two);
+}
